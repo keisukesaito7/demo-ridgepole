@@ -4,19 +4,17 @@
 
 ```
 # create new app
+
 $ rails _6.0.0_ new demo-ridgepole --skip-test -d mysql
 $ cd demo-ridgepole
-```
-
-```
-# create database
 $ rails db:create
 ```
 
 ## install gem ridgepole
 
-```
+```ruby
 # Gemfile
+
 gem 'ridgepole'
 ```
 
@@ -28,6 +26,7 @@ $ bundle install
 
 ```
 # db/Schemafile
+
 create_table "users", force: true do |t|
   t.string   "email"
   t.string   "name"
